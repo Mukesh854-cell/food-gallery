@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgColors: #f8eacc;
+    --buttons: #303b5f;
+    --border: rgb(202, 196, 196);
+    --secondary-color: #495761;
+}
+
+body {
+    width: 100%;
+    height: 2000px;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.title .search,
+.person {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar .app {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.2s ease-in;
+}
+
+.scrolled {
+    background-color: var(--bgColors);
+}
+
+.nav-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+}
+
+
+.nav-heading .app {
+    margin-right: 10px;
+}
+
+.nav-heading .list ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.nav-heading .list ul li:hover {
+    color: rgb(122, 20, 218);
+}
+
+.submit-recipe-btn {
+    background-color: var(--buttons);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    transition: 0.3s;
+}
+
+.submit-recipe-btn:hover {
+    background-color: #5b648f;
+}
