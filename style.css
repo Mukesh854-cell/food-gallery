@@ -91,7 +91,7 @@ nav {
 }
 
 .hero {
-    /* background-color: var(--bgColors); */
+    background-color: var(--bgColors);
     border-top: 1px solid rgb(241, 181, 138);
 }
 
@@ -190,4 +190,95 @@ nav {
     border-radius: 30px;
     width: 520px;
     object-fit: cover;
+}
+
+.heading-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 50%;
+    margin: 120px auto 50px auto;
+}
+
+.heading-gallery h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 35px;
+    color: rgb(17, 21, 24);
+}
+
+.heading-gallery p {
+    font-size: 16px;
+    color: rgb(104, 114, 121);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.grid {
+    /* background-color: #e3e9ee; */
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.card {
+    height: 520px;
+    width: 420px;
+    background-color: rgb(247, 247, 235);
+    border-radius: 15px;
+}
+
+.card .food {
+    height: 300px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .item {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background-color: #f7dfae;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card .item:hover {
+    background-color: #f1d493;
+}
+
+.card h3 {
+    max-width: 70%;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.chef-info {
+    display: flex;
+    align-items: center;
+}
+
+.chef-info .chef {
+    height: 40px;
+    margin: 20px 10px 20px 20px;
+}
+
+.chef-info span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(104, 114, 121);
 }
