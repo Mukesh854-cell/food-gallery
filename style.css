@@ -409,8 +409,11 @@ nav {
     width: 70%;
     margin: 30px auto;
     justify-content: space-around;
-    /* gap: 50px; */
-    }
+}
+
+.our-chef-section {
+    margin-bottom: 100px;
+}
 
 .our-chef {
     display: flex;
@@ -439,7 +442,66 @@ nav {
     margin-top: 20px;
 }
 
-.social-media img{
+.social-media img {
     height: 35px;
     margin-top: 10px;
+}
+
+.community-section {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+.chef-community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.chef-community span {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.chef-community h2 {
+    font-family: 'Poppins';
+    font-size: 35px;
+    color: white;
+    margin-top: 20px;
+}
+
+.count-chef {
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.count-chef .numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.count-chef p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 99, 16);
+}
+
+.count-chef span {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: white;
 }
