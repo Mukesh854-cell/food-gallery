@@ -206,6 +206,7 @@ nav {
     font-weight: 700;
     font-size: 35px;
     color: rgb(17, 21, 24);
+    margin-bottom: 15px;
 }
 
 .heading-gallery p {
@@ -401,4 +402,44 @@ nav {
 .download .app-store {
     height: 50px;
     width: 150px;
+}
+
+.staff {
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+    justify-content: space-around;
+    /* gap: 50px; */
+    }
+
+.our-chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-chef .chefs {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.our-chef h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.our-chef span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #495761;
+    margin-top: 20px;
+}
+
+.social-media img{
+    height: 35px;
+    margin-top: 10px;
 }
