@@ -91,7 +91,7 @@ nav {
 }
 
 .hero {
-    background-color: var(--bgColors);
+    background-color: #f0f0f0;
     border-top: 1px solid rgb(241, 181, 138);
 }
 
@@ -215,10 +215,6 @@ nav {
     font-weight: 400;
 }
 
-.grid {
-    /* background-color: #e3e9ee; */
-}
-
 .grid-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -228,7 +224,6 @@ nav {
 }
 
 .card {
-    height: 520px;
     width: 420px;
     background-color: rgb(247, 247, 235);
     border-radius: 15px;
@@ -281,4 +276,74 @@ nav {
     font-weight: 600;
     font-size: 12px;
     color: rgb(104, 114, 121);
+}
+
+.view-recipes {
+    display: flex;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: var(--buttons);
+    color: white;
+    border-radius: 6px;
+    margin: 80px auto;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.flex-category {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    align-items: center;
+    margin: 50px auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.category-card:hover .food {
+    transform: scale(1.15);
+    border-radius: 10px;
+}
+
+.category-card:hover .overlay {
+    opacity: 0.7;
+}
+
+.category-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.5;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.category-card .food {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.category-card h2 {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
