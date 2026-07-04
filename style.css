@@ -513,3 +513,61 @@ nav {
     font-weight: 400;
     color: white;
 }
+
+.footer {
+    background-color: rgb(20, 18, 18);
+    height: 350px;
+}
+
+.footer-flex{
+    display: flex;
+    max-width: 70%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 70px 0 0 50px;
+}
+
+.footer-flex h3 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(233, 235, 236);
+    margin-bottom: 20px;
+}
+
+.first-column .one ul li{
+    list-style: none;
+    color: rgb(116, 115, 115);
+    margin-top: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.first-column .one ul li:hover {
+    color: rgb(255, 99, 16);
+}
+
+.second-column .two p, .para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(116, 115, 115);
+    font-size: 16px;
+}
+
+.second-column .two .phone-fax {
+    margin: 20px 0;
+}
+
+
+.para p{
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.download-app img{
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+}
