@@ -13,27 +13,40 @@ window.addEventListener('scroll', () => {
 const statsSection = document.querySelector('.count-chef');
 
 const observer = new IntersectionObserver((entries) => {
+
     entries.forEach(entry => {
+
         if (entry.isIntersecting) {
-            
-            let count = 0;
-            const interval = setInterval(() => {
-                count += 20;
-                firstNumber.textContent = count.toLocaleString();
-                if (count >= number) {
-                    clearInterval(interval);
-                }
-            }, 15);
-            console.log('visible!')
+            observer.unobserve(entry.target);
+
+            const numbers = document.querySelectorAll('.numbers p');
+
+            numbers.forEach((el) => {
+                const target = el.textContent;
+                // console.log(target)
+                const cleaned = target.replace(',', '').replace('%', '');
+                const isPercentage = target.includes('%');
+                const number = Number(cleaned);
+
+                const totalTicks = 50;
+                const step = number / totalTicks;
+                let count = 0;
+
+                const interval = setInterval(() => {
+                    count += step;
+                    if (isPercentage) {
+                        el.textContent = count.toLocaleString() + '%';
+                    } else {
+                        el.textContent = count.toLocaleString();
+                    }
+                    if (count >= number) {
+                        clearInterval(interval)
+                    }
+                }, 20);
+            })
         }
     })
+
 })
 
 observer.observe(statsSection);
-
-const firstNumber = document.querySelector('.numbers p');
-const target = firstNumber.textContent;
-
-const cleaned = target.replace(',', '');
-const number = Number(cleaned);
-
