@@ -45,3 +45,17 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 observer.observe(statsSection);
+
+const hamburger = document.querySelector('.hamburger');
+const list = document.querySelector('.list');
+const closeBtn = document.querySelector('.close-btn');
+
+hamburger.addEventListener('click', () => {
+    list.classList.add('show');
+    document.body.style.overflow = 'hidden';
+})
+
+closeBtn.addEventListener('click', () => {
+    list.classList.remove('show');
+    document.body.style.overflow = 'auto';
+})
