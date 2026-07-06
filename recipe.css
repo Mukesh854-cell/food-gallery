@@ -1,0 +1,22 @@
+.nav {
+    border-bottom: 1px solid black;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(235, 234, 234);
+}
+
+.grid {
+    padding: 50px 0;
+    background-color: #fcf9f9;
+}
+
+.grid .card {
+    background-color: #f0f0f0;
+}
