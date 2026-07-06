@@ -864,7 +864,6 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         position: fixed;
         top: 0;
         left: 0;
@@ -900,7 +899,7 @@ a {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: 40px;
+        margin: 80px 0 30px 0;
     }
 
     .overlay-brand img {
@@ -985,11 +984,172 @@ a {
     }
 
     .pancake-img img {
-        height: 470px;
+        height: 520px;
         width: 350px;
+    }
+
+    .community-section {
+        height: 450px;
     }
 
     .grid-gallery {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chef-community h2 {
+        font-size: 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .download-app {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 690px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-container h1 {
+        font-size: 50px;
+        max-width: 70%;
+        margin: 25px auto;
+        line-height: 60px;
+    }
+
+    .made-by {
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .cook-now {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    .explore-recipes {
+        padding: 13px 30px;
+        font-size: 16px;
+    }
+
+    .image-container {
+        width: 600px;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+
+    .pancake-img img{
+        width: 100%;
+        height: 320px;
+    }
+
+    .app-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app-container .image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .app-container .phone {
+        height: 100%;
+    }
+
+    .app-container .content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .download {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        width: 450px;
+    }
+
+    .pancake-img img {
+        width: 100%;
+    }
+
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .community-section {
+        height: 600px;
+    }
+
+    .chef-community h2 {
+        font-size: 22px;
+    }
+
+    .count-chef {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .text-container h1 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .image-container {
+        width: 350px;
+    }
+
+    .pancake-img img {
+        width: 100%;
+    }
+
+    .heading-gallery h1 {
+        max-width: 100%;
+        font-size: 25px;
+    }
+
+    .download-app {
+        flex-direction: column;
     }
 }
