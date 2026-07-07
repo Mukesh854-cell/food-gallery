@@ -27,7 +27,8 @@
     gap: 50px;
 }
 
-.left-section , .right-section {
+.left-section,
+.right-section {
     max-width: 50%;
 }
 
@@ -51,8 +52,8 @@
     font-size: 20px;
 }
 
-.left-section img {
-    margin-top: 50px;
+.flex-one .left-section img {
+    margin-top: 20px;
 }
 
 .chef-image img {
@@ -99,7 +100,8 @@
         gap: 30px;
     }
 
-    .left-section h2, .right-section h2 {
+    .left-section h2,
+    .right-section h2 {
         font-size: 30px;
         margin-top: 20px;
     }
@@ -130,8 +132,9 @@
 }
 
 @media (max-width: 1360px) {
-    
-    .left-section h2, .right-section h2 {
+
+    .left-section h2,
+    .right-section h2 {
         font-size: 28px;
         margin-top: 20px;
     }
@@ -175,6 +178,17 @@
 }
 
 @media (max-width: 1100px) {
+
+    .chef-image {
+        height: 500px;
+        width: 500px;
+    }
+
+    .flex-one .chef-image img {
+        height: 500px;
+        width: 500px;
+    }
+
     .flex-two .right-section h2 {
         font-size: 28px;
         max-width: 90%;
@@ -191,20 +205,21 @@
 
 @media (max-width: 912px) {
     .flex-one {
-        max-width: 100%;
+        max-width: 95%;
     }
 
-    .chef-image img {
+    .flex-one .chef-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .flex-one .chef-image img {
         height: 400px;
         width: 400px;
     }
 
     .flex-two {
-        max-width: 100%;
-    }
-
-    .container-two .left-section {
-        /* width: 40%; */
+        max-width: 95%;
     }
 
     .chef-video img {
@@ -214,11 +229,13 @@
 }
 
 @media (max-width: 820px) {
-    .flex-one, .flex-two {
-       max-width: 95%;
+
+    .flex-one,
+    .flex-two {
+        max-width: 95%;
     }
 
-    .chef-video img {
+    .flex-two .chef-video img {
         height: 400px;
         width: 350px;
     }
@@ -232,3 +249,93 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .left-section span {
+        font-size: 16px;
+    }
+
+    .flex-one .left-section h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .flex-one .left-section p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .flex-one .right-section .chef-image {
+        height: 350px;
+        width: 350px;
+    }
+
+    .flex-one .chef-image {
+        height: 350px;
+        width: 350px;
+    }
+
+    .flex-one .chef-image img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .flex-two .chef-video {
+        height: 450px;
+        width: 300px;
+    }
+
+    .flex-two .chef-video img {
+        height: 450px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 700px) {
+    .flex-one, .flex-two {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-one .right-section {
+        max-width: 100%;
+    }
+
+    .flex-one .right-section .chef-image {
+        width: 300px;
+    }
+    
+    .flex-one .chef-image img {
+        width: 300px;
+    }
+
+    .flex-two .left-section {
+        height: 450px;
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .flex-two .left-section .chef-video {
+        width: 300px;
+    }
+
+    .flex-two .left-section .chef-video img {
+        height: 100%;
+        width: 300px;
+    }
+
+    .flex-one .left-section, .flex-two .right-section {
+        max-width: 90%;
+    }
+
+    .flex-one .left-section h2, .flex-two .right-section h2 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .flex-one .left-section p, .flex-two .right-section p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+}
